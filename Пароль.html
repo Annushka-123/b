@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Пароль</title>
+        <style>
+            body {
+                padding: 30px;
+                background-color: lightskyblue;
+            }
+        </style>
+        <script>
+            function checkPassword() {
+                var password = document.getElementById("passwordBox")
+                var passwordText = password.value;
+                if (passwordText == "CorrectParole") {
+                    return true;
+                }
+                alert("Пароль неверный. Дорогие господа мошенники, взломщики, грабители и другие, просим вас покинуть сайт.");
+                return false;
+            }
+            </script>
+    </head>
+    <body>
+        <p style="font-size: 30pt;">НАЙДЕН АЛМАЗ МОНАХ</p>
+        <p>Для входа на сайт введите, пожалуйста, пароль.</p>
+        <p>Пароль:<input id="passwordBox" type="password"/></p>
+        <a href="sait.html" onclick="return checkPassword();">
+            Жми здесь чтобы отправить пароль и посмотреть сайт
+        </a>
+    </body>
+</html>
